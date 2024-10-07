@@ -318,6 +318,9 @@ endif
 ifeq ($(CIRCUITPY_PS2IO),1)
 SRC_PATTERNS += ps2io/%
 endif
+ifeq ($(CIRCUITPY_TTS),1)
+SRC_PATTERNS += tts/%
+endif
 ifeq ($(CIRCUITPY_PULSEIO),1)
 SRC_PATTERNS += pulseio/%
 endif
@@ -517,6 +520,8 @@ SRC_COMMON_HAL_ALL = \
 	paralleldisplaybus/ParallelBus.c \
 	ps2io/Ps2.c \
 	ps2io/__init__.c \
+	tts/Ps2.c \
+	tts/__init__.c \
 	pulseio/PulseIn.c \
 	pulseio/PulseOut.c \
 	pulseio/__init__.c \
