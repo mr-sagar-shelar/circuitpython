@@ -3,7 +3,7 @@
 
 #include "shared-module/mymodule/MyClass.h"
 
-extern const mp_obj_type_t mymodule_myclass_type;
+// extern const mp_obj_type_t mymodule_myclass_type;
 
 extern void shared_module_mymodule_myclass_construct(mymodule_myclass_obj_t* self);
 extern void shared_module_mymodule_myclass_deinit(mymodule_myclass_obj_t* self);
