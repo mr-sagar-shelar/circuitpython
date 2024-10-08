@@ -24,7 +24,7 @@ static MP_DEFINE_CONST_FUN_OBJ_2(random_randint_obj, random_randint);
 static const mp_rom_map_elem_t mymodule_module_globals_table[] = {
     { MP_ROM_QSTR(MP_QSTR___name__), MP_ROM_QSTR(MP_QSTR_mymodule) },
     { MP_ROM_QSTR(MP_QSTR_randint), MP_ROM_PTR(&random_randint_obj) },
-    { MP_ROM_QSTR(MP_QSTR_MyClass), MP_ROM_PTR(&mymodule_myclass_type) },
+    // { MP_ROM_QSTR(MP_QSTR_MyClass), MP_ROM_PTR(&mymodule_myclass_type) },
 };
 
 static MP_DEFINE_CONST_DICT(mymodule_module_globals, mymodule_module_globals_table);
