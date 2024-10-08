@@ -318,6 +318,9 @@ endif
 ifeq ($(CIRCUITPY_PS2IO),1)
 SRC_PATTERNS += ps2io/%
 endif
+ifeq ($(CIRCUITPY_MYMODULE),1)
+SRC_PATTERNS += mymodule/%
+endif
 ifeq ($(CIRCUITPY_PULSEIO),1)
 SRC_PATTERNS += pulseio/%
 endif
@@ -694,6 +697,7 @@ SRC_SHARED_MODULE_ALL = \
 	qrio/QRDecoder.c \
 	rainbowio/__init__.c \
 	random/__init__.c \
+	mymodule/__init__.c \
 	rgbmatrix/RGBMatrix.c \
 	rgbmatrix/__init__.c \
 	rotaryio/IncrementalEncoder.c \

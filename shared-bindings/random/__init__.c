@@ -167,5 +167,6 @@ const mp_obj_module_t random_module = {
     .base = { &mp_type_module },
     .globals = (mp_obj_dict_t *)&mp_module_random_globals,
 };
+// refer from docs https://learn.adafruit.com/extending-circuitpython/inside-the-virtual-machine
 
 MP_REGISTER_MODULE(MP_QSTR_random, random_module);
