@@ -146,7 +146,8 @@
 	branch = circuitpython-v5.3.1
 [submodule "ports/espressif/esp-protocols"]
 	path = ports/espressif/esp-protocols
-	url = https://github.com/espressif/esp-protocols.git
+	url = https://github.com/adafruit/esp-protocols.git
+	branch = circuitpython
 [submodule "ports/espressif/esp-camera"]
 	path = ports/espressif/esp-camera
 	url = https://github.com/adafruit/esp32-camera.git

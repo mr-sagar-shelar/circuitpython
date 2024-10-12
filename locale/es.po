@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-04 12:55-0600\n"
-"PO-Revision-Date: 2023-11-16 15:03+0000\n"
-"Last-Translator: RubenD <rubendariopm14@gmail.com>\n"
+"PO-Revision-Date: 2024-10-09 08:15+0000\n"
+"Last-Translator: Kamborio <Kamborio15@users.noreply.hosted.weblate.org>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.2\n"
+"X-Generator: Weblate 5.8-dev\n"
 
 #: main.c
 msgid ""
@@ -107,7 +107,7 @@ msgstr ""
 
 #: ports/nordic/common-hal/watchdog/WatchDogTimer.c
 msgid "%q cannot be changed once mode is set to %q"
-msgstr ""
+msgstr "no se puede cambiar %q una vez que se establece el modo a %q"
 
 #: shared-bindings/microcontroller/Pin.c
 msgid "%q contains duplicate pins"
@@ -171,7 +171,7 @@ msgstr "%q longitud debe ser >= %d"
 
 #: py/modsys.c py/objmodule.c py/runtime.c
 msgid "%q moved from %q to %q"
-msgstr ""
+msgstr "%q movido de %q a %q"
 
 #: py/argcheck.c
 msgid "%q must be %d"
@@ -196,7 +196,7 @@ msgstr "%q debe ser <= %d"
 
 #: ports/espressif/common-hal/watchdog/WatchDogTimer.c
 msgid "%q must be <= %u"
-msgstr ""
+msgstr "%q debe ser <= %u"
 
 #: py/argcheck.c
 msgid "%q must be >= %d"
@@ -212,7 +212,7 @@ msgstr "%q debe ser un bytearray o array de tipo 'h', 'H', 'b', o 'B'"
 
 #: shared-bindings/warnings/__init__.c
 msgid "%q must be a subclass of %q"
-msgstr ""
+msgstr "%q debe ser una subclase de %q"
 
 #: ports/espressif/common-hal/analogbufio/BufferedIn.c
 msgid "%q must be array of type 'H'"
@@ -224,7 +224,7 @@ msgstr "%q debe ser una matriz de tipo 'h'"
 
 #: shared-bindings/audiobusio/PDMIn.c
 msgid "%q must be multiple of 8."
-msgstr ""
+msgstr "%q debe ser múltiplo de 8."
 
 #: ports/raspberrypi/bindings/cyw43/__init__.c py/argcheck.c py/objexcept.c
 #: shared-bindings/bitmapfilter/__init__.c shared-bindings/canio/CAN.c
@@ -235,7 +235,7 @@ msgstr "%q debe ser del tipo %q o %q, y no %q"
 
 #: shared-bindings/jpegio/JpegDecoder.c
 msgid "%q must be of type %q, %q, or %q, not %q"
-msgstr ""
+msgstr "%q debe ser de tipo %q, %q, o %q, no %q"
 
 #: py/argcheck.c py/runtime.c shared-bindings/bitmapfilter/__init__.c
 #: shared-module/synthio/__init__.c
@@ -261,7 +261,7 @@ msgstr "%q fuera de rango"
 
 #: py/objmodule.c py/runtime.c
 msgid "%q renamed %q"
-msgstr ""
+msgstr "%q renombrado %q"
 
 #: py/objrange.c py/objslice.c shared-bindings/random/__init__.c
 msgid "%q step cannot be zero"
@@ -269,7 +269,7 @@ msgstr "%q paso no puede ser cero"
 
 #: shared-module/bitbangio/I2C.c
 msgid "%q too long"
-msgstr ""
+msgstr "%q demasiado largo"
 
 #: py/bc.c py/objnamedtuple.c
 msgid "%q() takes %d positional arguments but %d were given"
@@ -277,7 +277,7 @@ msgstr "%q() toma %d argumentos posicionales pero %d fueron dados"
 
 #: shared-module/jpegio/JpegDecoder.c
 msgid "%q() without %q()"
-msgstr ""
+msgstr "%q() sin %q()"
 
 #: shared-bindings/usb_hid/Device.c
 msgid "%q, %q, and %q must all be the same length"
@@ -415,7 +415,7 @@ msgstr "'await' fuera de la función"
 
 #: py/compile.c
 msgid "'break'/'continue' outside loop"
-msgstr ""
+msgstr "'break'/'continue' fuera del bucle"
 
 #: py/compile.c
 msgid "'data' requires at least 2 arguments"
@@ -431,7 +431,7 @@ msgstr "'label' requiere 1 argumento"
 
 #: py/emitnative.c
 msgid "'not' not implemented"
-msgstr ""
+msgstr "'not' no implementado"
 
 #: py/compile.c
 msgid "'return' outside function"
@@ -461,7 +461,7 @@ msgstr ", en %q\n"
 #: shared-bindings/epaperdisplay/EPaperDisplay.c
 #: shared-bindings/framebufferio/FramebufferDisplay.c
 msgid ".show(x) removed. Use .root_group = x"
-msgstr ""
+msgstr ".show(x) eliminado. Utiliza .root_group = x"
 
 #: py/objcomplex.c
 msgid "0.0 to a complex power"
@@ -473,7 +473,7 @@ msgstr "pow() con 3 argumentos no soportado"
 
 #: ports/raspberrypi/common-hal/wifi/Radio.c
 msgid "AP could not be started"
-msgstr ""
+msgstr "No se pudo iniciar el Punto de Acceso"
 
 #: shared-bindings/_bleio/Address.c shared-bindings/ipaddress/IPv4Address.c
 #, c-format
@@ -642,7 +642,7 @@ msgstr "Por debajo de la tasa mínima de refrescamiento"
 
 #: ports/raspberrypi/common-hal/audiobusio/I2SOut.c
 msgid "Bit clock and word select must be sequential GPIO pins"
-msgstr ""
+msgstr "Reloj de bit y selección de palabra deben ser pines secuenciales GPIO"
 
 #: shared-bindings/bitmaptools/__init__.c
 msgid "Bitmap size and bits per value must match"
@@ -687,7 +687,7 @@ msgstr ""
 #: shared-module/sdcardio/SDCard.c
 #, c-format
 msgid "Buffer must be a multiple of %d bytes"
-msgstr ""
+msgstr "El búfer debe ser múltiplo de %d bytes"
 
 #: shared-bindings/_bleio/PacketBuffer.c
 #, c-format
@@ -881,7 +881,7 @@ msgstr "Trozo de datos debe seguir fmt chunk"
 
 #: shared-module/jpegio/JpegDecoder.c
 msgid "Data format error (may be broken data)"
-msgstr ""
+msgstr "Error de formato de datos (pueden ser datos incompletos)"
 
 #: ports/espressif/common-hal/_bleio/Adapter.c
 #: ports/nordic/common-hal/_bleio/Adapter.c
@@ -904,7 +904,7 @@ msgstr "Capacidad de destino es mas pequeña que destination_length."
 
 #: shared-module/jpegio/JpegDecoder.c
 msgid "Device error or wrong termination of input stream"
-msgstr ""
+msgstr "Error de dispositivo o terminación errónea del flujo de entrada"
 
 #: ports/nordic/common-hal/audiobusio/I2SOut.c
 msgid "Device in use"
@@ -1156,7 +1156,7 @@ msgstr "La entrada está durando mucho tiempo"
 
 #: py/moderrno.c
 msgid "Input/output error"
-msgstr "error Input/output"
+msgstr "Error input/output"
 
 #: ports/espressif/common-hal/_bleio/__init__.c
 #: ports/nordic/common-hal/_bleio/__init__.c
@@ -1170,11 +1170,11 @@ msgstr "Cifrado insuficiente"
 
 #: shared-module/jpegio/JpegDecoder.c
 msgid "Insufficient memory pool for the image"
-msgstr ""
+msgstr "Reserva de memoria insuficiente para la imagen"
 
 #: shared-module/jpegio/JpegDecoder.c
 msgid "Insufficient stream input buffer"
-msgstr ""
+msgstr "Búfer de flujo de entrada insuficiente"
 
 #: ports/espressif/common-hal/wifi/Radio.c
 msgid "Interface must be started"
@@ -1208,7 +1208,7 @@ msgstr "Error interno #%d"
 #: ports/raspberrypi/common-hal/picodvi/Framebuffer_RP2350.c
 #: shared-bindings/pwmio/PWMOut.c
 msgid "Internal resource(s) in use"
-msgstr ""
+msgstr "Recurso(s) interno(s) en uso"
 
 #: supervisor/shared/safe_mode.c
 msgid "Internal watchdog timer expired."
@@ -1220,7 +1220,7 @@ msgstr "Error de interrupción."
 
 #: shared-module/jpegio/JpegDecoder.c
 msgid "Interrupted by output function"
-msgstr ""
+msgstr "Interrumpido por resultado de función"
 
 #: ports/espressif/common-hal/_bleio/Service.c
 #: ports/espressif/common-hal/espulp/ULP.c
@@ -1239,7 +1239,7 @@ msgstr "%q inválido"
 #: ports/raspberrypi/common-hal/picodvi/Framebuffer_RP2350.c
 #: shared-module/aurora_epaper/aurora_framebuffer.c
 msgid "Invalid %q and %q"
-msgstr ""
+msgstr "%q y %q no válidos"
 
 #: ports/atmel-samd/common-hal/microcontroller/Pin.c
 #: ports/espressif/common-hal/dotclockframebuffer/DotClockFramebuffer.c
@@ -1276,7 +1276,7 @@ msgstr "Inválido bits por valor"
 #: shared-module/os/getenv.c
 #, c-format
 msgid "Invalid byte %.*s"
-msgstr "byte %.*s Inválido"
+msgstr "Byte %.*s no válido"
 
 #: ports/atmel-samd/common-hal/imagecapture/ParallelImageCapture.c
 #, c-format
@@ -1305,7 +1305,7 @@ msgstr "Tamaño incorrecto"
 
 #: shared-module/ssl/SSLSocket.c
 msgid "Invalid socket for TLS"
-msgstr "socket invalido para TLS"
+msgstr "Socket invalido para TLS"
 
 #: ports/espressif/common-hal/espidf/__init__.c
 msgid "Invalid state"
@@ -1341,7 +1341,7 @@ msgstr "El Layer debe ser un grupo o una subclase de TileGrid"
 
 #: shared-bindings/audiocore/RawSample.c
 msgid "Length of %q must be an even multiple of channel_count * type_size"
-msgstr ""
+msgstr "La longitud de %q debe ser un múltiplo par de channel_count * type_size"
 
 #: ports/espressif/common-hal/espidf/__init__.c
 msgid "MAC address was invalid"
@@ -1350,7 +1350,7 @@ msgstr "La dirección MAC es incorrecta"
 #: ports/espressif/common-hal/_bleio/Characteristic.c
 #: ports/espressif/common-hal/_bleio/Descriptor.c
 msgid "MITM security not supported"
-msgstr ""
+msgstr "Seguridad MITM no compatible"
 
 #: shared-bindings/is31fl3741/IS31FL3741.c
 msgid "Mapping must be a tuple"
@@ -1395,7 +1395,7 @@ msgstr "Falta jmp_pin. %q[%u] salta en pin"
 
 #: shared-module/storage/__init__.c
 msgid "Mount point directory missing"
-msgstr ""
+msgstr "Falta el directorio de punto de montaje"
 
 #: shared-bindings/busio/UART.c shared-bindings/displayio/Group.c
 msgid "Must be a %q subclass."
@@ -1403,7 +1403,7 @@ msgstr "Debe de ser una subclase de %q."
 
 #: ports/espressif/common-hal/dotclockframebuffer/DotClockFramebuffer.c
 msgid "Must provide 5/6/5 RGB pins"
-msgstr ""
+msgstr "Debe proporcionar los pines RGB 5/6/5"
 
 #: ports/mimxrt10xx/common-hal/busio/SPI.c shared-bindings/busio/SPI.c
 msgid "Must provide MISO or MOSI pin"
@@ -1467,7 +1467,7 @@ msgstr "No se encontró el canal DMA"
 
 #: ports/raspberrypi/common-hal/audiopwmio/PWMAudioOut.c
 msgid "No DMA pacing timer found"
-msgstr "timer por establecedor de paso DMA no encontrado"
+msgstr "Temporizador DMA no encontrado"
 
 #: shared-module/adafruit_bus_device/i2c_device/I2CDevice.c
 #, c-format
@@ -1578,13 +1578,13 @@ msgstr "No reproduciendo"
 
 #: shared-module/jpegio/JpegDecoder.c
 msgid "Not supported JPEG standard"
-msgstr ""
+msgstr "Estándar JPEG no compatible"
 
 #: ports/espressif/common-hal/paralleldisplaybus/ParallelBus.c
 #: ports/espressif/common-hal/sdioio/SDCard.c
 #, c-format
 msgid "Number of data_pins must be %d or %d, not %d"
-msgstr ""
+msgstr "El número de data_pins debe ser %d o %d, no %d"
 
 #: shared-bindings/util.c
 msgid ""
@@ -1720,7 +1720,7 @@ msgstr "Segmento del PWM canal A ya esta en uso"
 
 #: shared-module/jpegio/JpegDecoder.c
 msgid "Parameter error"
-msgstr ""
+msgstr "Error de parámetro"
 
 #: ports/espressif/common-hal/audiobusio/__init__.c
 msgid "Peripheral in use"
@@ -1901,7 +1901,7 @@ msgstr "Canal derecho no soportado"
 
 #: shared-module/jpegio/JpegDecoder.c
 msgid "Right format but not supported"
-msgstr ""
+msgstr "Formato correcto pero no compatible"
 
 #: main.c
 msgid "Running in safe mode! Not running saved code.\n"
@@ -1992,7 +1992,7 @@ msgstr "Especifique exactamente uno de data0 or data_pins"
 
 #: supervisor/shared/safe_mode.c
 msgid "Stack overflow. Increase stack size."
-msgstr ""
+msgstr "Desbordamiento de pila. Aumenta el tamaño de pila."
 
 #: shared-bindings/alarm/time/TimeAlarm.c
 msgid "Supply one of monotonic_time or epoch_time"
@@ -2165,7 +2165,7 @@ msgstr "UUID valor no es un str, int o byte buffer"
 
 #: ports/raspberrypi/common-hal/memorymap/AddressRange.c
 msgid "Unable to access unaligned IO register"
-msgstr ""
+msgstr "Incapaz de acceder al registro no alineado de IO"
 
 #: ports/atmel-samd/common-hal/audiobusio/I2SOut.c
 #: ports/atmel-samd/common-hal/audioio/AudioOut.c
@@ -2207,7 +2207,7 @@ msgstr "Imposible escribir en nvm."
 
 #: ports/raspberrypi/common-hal/memorymap/AddressRange.c
 msgid "Unable to write to read-only memory"
-msgstr ""
+msgstr "Incapaz de escribir en memoria de solo lectura"
 
 #: shared-bindings/alarm/SleepMemory.c
 msgid "Unable to write to sleep_memory."
@@ -2300,12 +2300,12 @@ msgstr "Algoritmo hash no soportado"
 
 #: ports/espressif/common-hal/socketpool/Socket.c
 msgid "Unsupported socket type"
-msgstr ""
+msgstr "Tipo de socket no compatible"
 
 #: ports/espressif/common-hal/_bleio/Adapter.c
 #: ports/espressif/common-hal/dualbank/__init__.c
 msgid "Update failed"
-msgstr ""
+msgstr "Actualización fallida"
 
 #: ports/espressif/common-hal/_bleio/Characteristic.c
 #: ports/nordic/common-hal/_bleio/Characteristic.c
@@ -2384,7 +2384,7 @@ msgstr "Usted presionó el botón A al iniciar."
 
 #: ports/espressif/boards/m5stack_m5paper/mpconfigboard.h
 msgid "You pressed button DOWN at start up."
-msgstr ""
+msgstr "Usted presionó el botón DOWN en el arranque."
 
 #: supervisor/shared/safe_mode.c
 msgid "You pressed the BOOT button at start up"
@@ -2393,7 +2393,7 @@ msgstr "Usted presionó el botón BOOT al iniciar"
 #: ports/espressif/boards/adafruit_feather_esp32c6_4mbflash_nopsram/mpconfigboard.h
 #: ports/espressif/boards/adafruit_itsybitsy_esp32/mpconfigboard.h
 msgid "You pressed the BOOT button at start up."
-msgstr ""
+msgstr "Usted presionó el botón BOOT en el arranque."
 
 #: ports/espressif/boards/adafruit_huzzah32_breakout/mpconfigboard.h
 msgid "You pressed the GPIO0 button at start up."
@@ -2470,15 +2470,15 @@ msgstr "arg debe ser tipo-user"
 
 #: extmod/ulab/code/numpy/numerical.c
 msgid "argsort argument must be an ndarray"
-msgstr "El argumento para argsort debe ser un ndarray"
+msgstr "el argumento para argsort debe ser un ndarray"
 
 #: extmod/ulab/code/numpy/numerical.c
 msgid "argsort is not implemented for flattened arrays"
-msgstr "El argot no está implementado para arrays aplanados"
+msgstr "argsort no está implementado para arrays aplanados"
 
 #: extmod/ulab/code/numpy/random/random.c
 msgid "argument must be None, an integer or a tuple of integers"
-msgstr ""
+msgstr "el argumento debe ser None, un entero o una tupla de enteros"
 
 #: py/compile.c
 msgid "argument name reused"
@@ -2495,11 +2495,11 @@ msgstr "argumentos deben ser ndarrays"
 
 #: extmod/ulab/code/ndarray.c
 msgid "array and index length must be equal"
-msgstr "Longitud del array e índice tienen que ser iguales"
+msgstr "las longitudes del array e índice deben ser iguales"
 
 #: extmod/ulab/code/numpy/io/io.c
 msgid "array has too many dimensions"
-msgstr "La matriz tiene demasiadas dimensiones"
+msgstr "la matriz tiene demasiadas dimensiones"
 
 #: extmod/ulab/code/ndarray.c
 msgid "array is too big"
@@ -2516,11 +2516,11 @@ msgstr "desborde de asm"
 
 #: py/compile.c
 msgid "async for/with outside async function"
-msgstr ""
+msgstr "async for/with fuera de función async"
 
 #: extmod/ulab/code/numpy/numerical.c
 msgid "attempt to get (arg)min/(arg)max of empty sequence"
-msgstr "Intendo de obteber (arg)min/(arg)max de secuencia vacía"
+msgstr "intento de obtener (arg)min/(arg)max de secuencia vacía"
 
 #: extmod/ulab/code/numpy/numerical.c
 msgid "attempt to get argmin/argmax of an empty sequence"
@@ -2528,23 +2528,23 @@ msgstr "intento de obtener argmin/argmax de una secuencia vacía"
 
 #: py/objstr.c
 msgid "attributes not supported"
-msgstr ""
+msgstr "atributos no compatibles"
 
 #: extmod/ulab/code/ulab_tools.c
 msgid "axis is out of bounds"
-msgstr "Eje está fuera de sus límites"
+msgstr "eje está fuera de sus límites"
 
 #: extmod/ulab/code/numpy/numerical.c extmod/ulab/code/ulab_tools.c
 msgid "axis must be None, or an integer"
-msgstr "Eje tiene que ser None, o un entero"
+msgstr "eje debe ser None, o un entero"
 
 #: extmod/ulab/code/numpy/numerical.c
 msgid "axis too long"
-msgstr "Eje demasiado largo"
+msgstr "eje demasiado largo"
 
 #: shared-bindings/bitmaptools/__init__.c
 msgid "background value out of range of target"
-msgstr "El valor del fondo esta fuera del rango del objectivo"
+msgstr "el valor del fondo esta fuera del rango del objetivo"
 
 #: py/builtinevex.c
 msgid "bad compile mode"
@@ -2568,11 +2568,11 @@ msgstr "operacion binaria %q no implementada"
 
 #: shared-module/bitmapfilter/__init__.c
 msgid "bitmap size and depth must match"
-msgstr ""
+msgstr "el tamaño y profundidad del mapa de bits deben coincidir"
 
 #: shared-bindings/bitmaptools/__init__.c
 msgid "bitmap sizes must match"
-msgstr "Los tamaños de los bitmap deben coincidir"
+msgstr "los tamaños de los bitmap deben coincidir"
 
 #: extmod/modrandom.c
 msgid "bits must be 32 or less"
@@ -2588,11 +2588,11 @@ msgstr "la rama no está dentro del rango"
 
 #: extmod/ulab/code/numpy/create.c extmod/ulab/code/utils/utils.c
 msgid "buffer is smaller than requested size"
-msgstr "El buffer es mas pequeño que el requerido"
+msgstr "el búfer es más pequeño que el tamaño solicitado"
 
 #: extmod/ulab/code/numpy/create.c extmod/ulab/code/utils/utils.c
 msgid "buffer size must be a multiple of element size"
-msgstr "El tamaño del buffer debe ser un múltiplo del tamaño del elemento"
+msgstr "el tamaño del búfer debe ser un múltiplo del tamaño del elemento"
 
 #: shared-module/struct/__init__.c
 msgid "buffer size must match format"
@@ -2600,7 +2600,7 @@ msgstr "el tamaño del buffer debe de coincidir con el formato"
 
 #: shared-bindings/bitbangio/SPI.c shared-bindings/busio/SPI.c
 msgid "buffer slices must be of equal length"
-msgstr "Las secciones del buffer necesitan tener longitud igual"
+msgstr "las secciones del búfer deben tener la misma longitud"
 
 #: py/modstruct.c shared-module/struct/__init__.c
 msgid "buffer too small"
@@ -2724,7 +2724,7 @@ msgstr "no se puede convertir implícitamente '%q' a 'bool'"
 
 #: py/runtime.c
 msgid "can't import name %q"
-msgstr ""
+msgstr "no se puede importar el nombre %q"
 
 #: py/emitnative.c
 msgid "can't load from '%q'"
@@ -2794,8 +2794,9 @@ msgid "cannot assign new shape"
 msgstr "no se puede asignar una nueva forma"
 
 #: extmod/ulab/code/ndarray_operators.c
+#, fuzzy
 msgid "cannot cast output with casting rule"
-msgstr "No se puede realizar cast de la salida sin una regla de cast"
+msgstr "no se puede realizar cast de la salida sin una regla de cast"
 
 #: extmod/ulab/code/ndarray.c
 msgid "cannot convert complex to dtype"
@@ -2835,15 +2836,15 @@ msgstr "chars buffer es demasiado pequeño"
 
 #: py/modbuiltins.c
 msgid "chr() arg not in range(0x110000)"
-msgstr "El argumento de chr() esta fuera de rango(0x110000)"
+msgstr "argumento chr() está fuera de rango(0x110000)"
 
 #: py/modbuiltins.c
 msgid "chr() arg not in range(256)"
-msgstr "El argumento de chr() no esta en el rango(256)"
+msgstr "argumento chr() no está en el rango(256)"
 
 #: shared-bindings/bitmaptools/__init__.c
 msgid "clip point must be (x,y) tuple"
-msgstr "El punto de recorte debe ser una tupla (x, y)"
+msgstr "el punto de recorte debe ser una tupla (x, y)"
 
 #: shared-bindings/msgpack/ExtType.c
 msgid "code outside range 0~127"
@@ -2871,7 +2872,7 @@ msgstr "comparación entre int y uint"
 
 #: py/objcomplex.c
 msgid "complex divide by zero"
-msgstr ""
+msgstr "división compleja entre cero"
 
 #: py/objfloat.c py/parsenum.c
 msgid "complex values not supported"
@@ -2899,7 +2900,7 @@ msgstr "los argumentos para convolve no deben estar vacíos"
 
 #: extmod/ulab/code/numpy/io/io.c
 msgid "corrupted file"
-msgstr "Archivo corrompido"
+msgstr "archivo corrompido"
 
 #: extmod/ulab/code/numpy/poly.c
 msgid "could not invert Vandermonde matrix"
@@ -2911,7 +2912,7 @@ msgstr "no se pudo determinar la versión de la tarjeta SD"
 
 #: extmod/ulab/code/numpy/numerical.c
 msgid "cross is defined for 1D arrays of length 3"
-msgstr "Cruce está definido para un array 1D de longitud 3"
+msgstr "cruce está definido para un array 1D de longitud 3"
 
 #: extmod/ulab/code/scipy/optimize/optimize.c
 msgid "data must be iterable"
@@ -2959,11 +2960,11 @@ msgstr "la secuencia de actualizacion del dict tiene una longitud incorrecta"
 
 #: extmod/ulab/code/numpy/numerical.c
 msgid "diff argument must be an ndarray"
-msgstr "El argumento diff debe ser un ndarray"
+msgstr "el argumento diff debe ser un ndarray"
 
 #: extmod/ulab/code/numpy/numerical.c
 msgid "differentiation order out of range"
-msgstr "Orden de diferenciación fuera de rango"
+msgstr "órden de diferenciación fuera de rango"
 
 #: extmod/ulab/code/numpy/transform.c
 msgid "dimensions do not match"
@@ -2987,7 +2988,7 @@ msgstr "dtype debe ser float, o complex"
 
 #: extmod/ulab/code/ndarray_operators.c
 msgid "dtype of int32 is not supported"
-msgstr ""
+msgstr "dtype de int32 no compatible"
 
 #: py/objdeque.c
 msgid "empty"
@@ -3086,7 +3087,7 @@ msgstr "el primer argumento debe ser una función"
 
 #: extmod/ulab/code/numpy/create.c
 msgid "first argument must be a tuple of ndarrays"
-msgstr "Primer argumento tiene que ser una tupla de ndarrays"
+msgstr "el primer argumento debe ser una tupla de ndarrays"
 
 #: extmod/ulab/code/numpy/transform.c extmod/ulab/code/numpy/vector.c
 msgid "first argument must be an ndarray"
@@ -3122,7 +3123,7 @@ msgstr "font debe ser 2048 bytes de largo"
 
 #: extmod/moddeflate.c
 msgid "format"
-msgstr ""
+msgstr "formato"
 
 #: py/objstr.c
 msgid "format requires a dict"
@@ -3151,7 +3152,7 @@ msgstr "la función tiene el mismo signo a extremos del intervalo"
 
 #: extmod/ulab/code/ndarray.c
 msgid "function is defined for ndarrays only"
-msgstr "Función solo definida para ndarrays"
+msgstr "función solo definida para ndarrays"
 
 #: extmod/ulab/code/numpy/carray/carray.c
 msgid "function is implemented for ndarrays only"
@@ -3293,7 +3294,7 @@ msgstr "el tamaño del arreglo de entrada debe ser potencia de 2"
 
 #: extmod/ulab/code/numpy/create.c
 msgid "input arrays are not compatible"
-msgstr "Arrays de entrada no son compactibles"
+msgstr "matrices de entrada no son compatibles"
 
 #: extmod/ulab/code/numpy/poly.c
 msgid "input data must be an iterable"
@@ -3326,11 +3327,11 @@ msgstr "entrada debe ser un ndarray de 1D"
 
 #: extmod/ulab/code/scipy/linalg/linalg.c extmod/ulab/code/user/user.c
 msgid "input must be a dense ndarray"
-msgstr "Entrada tiene que ser un ndarray denso"
+msgstr "la entrada debe ser un ndarray denso"
 
 #: extmod/ulab/code/user/user.c shared-bindings/_eve/__init__.c
 msgid "input must be an ndarray"
-msgstr "Entrada tiene que ser un ndarray"
+msgstr "la entrada debe ser un ndarray"
 
 #: extmod/ulab/code/numpy/carray/carray.c
 msgid "input must be an ndarray, or a scalar"
@@ -3338,7 +3339,7 @@ msgstr "entrada debe ser una ndarray o un escalar"
 
 #: extmod/ulab/code/scipy/signal/signal.c
 msgid "input must be one-dimensional"
-msgstr "Entrada tiene que ser unidimensional"
+msgstr "la entrada debe ser unidimensional"
 
 #: extmod/ulab/code/ulab_tools.c
 msgid "input must be square matrix"
@@ -3363,7 +3364,7 @@ msgstr "el intervalo debe ser der rango %s-%s"
 
 #: py/compile.c
 msgid "invalid arch"
-msgstr ""
+msgstr "arco no válido"
 
 #: shared-bindings/bitmaptools/__init__.c
 #, c-format
@@ -3449,6 +3450,8 @@ msgstr ""
 #: py/argcheck.c
 msgid "keyword argument(s) not implemented - use normal args instead"
 msgstr ""
+"argumento(s) de palabras clave no implementado - en su lugar utiliza "
+"argumentos normales"
 
 #: py/emitinlinethumb.c py/emitinlinextensa.c
 msgid "label '%q' not defined"
@@ -3480,7 +3483,7 @@ msgstr "variable local referenciada antes de la asignación"
 
 #: ports/espressif/common-hal/canio/CAN.c
 msgid "loopback + silent mode not supported by peripheral"
-msgstr "Loopback + modo silencioso no están soportados por periférico"
+msgstr "bucle de retorno + modo silencioso no admitidos por periférico"
 
 #: ports/espressif/common-hal/mdns/Server.c
 #: ports/raspberrypi/common-hal/mdns/Server.c
@@ -3555,7 +3558,7 @@ msgstr ""
 
 #: extmod/modtime.c
 msgid "mktime needs a tuple of length 8 or 9"
-msgstr ""
+msgstr "mktime requiere una tupla de longitud 8 o 9"
 
 #: extmod/ulab/code/numpy/linalg/linalg.c
 msgid "mode must be complete, or reduced"
@@ -3603,11 +3606,11 @@ msgstr "name no definido"
 
 #: py/qstr.c
 msgid "name too long"
-msgstr ""
+msgstr "nombre demasiado largo"
 
 #: py/persistentcode.c
 msgid "native code in .mpy unsupported"
-msgstr ""
+msgstr "código nativo .mpy no compatible"
 
 #: py/asmthumb.c
 msgid "native method too big"
@@ -3866,7 +3869,7 @@ msgstr "ord() espera un carácter, pero encontró un string de longitud %d"
 
 #: extmod/ulab/code/utils/utils.c
 msgid "out array is too small"
-msgstr "La matriz de salida es demasiado pequeña"
+msgstr "la matriz de salida es demasiado pequeña"
 
 #: extmod/ulab/code/numpy/random/random.c
 msgid "out has wrong type"
@@ -3898,11 +3901,11 @@ msgstr "fuera de rango del objetivo"
 
 #: extmod/ulab/code/numpy/random/random.c
 msgid "output array has wrong type"
-msgstr ""
+msgstr "matriz de salida tiene el tipo erróneo"
 
 #: extmod/ulab/code/numpy/random/random.c
 msgid "output array must be contiguous"
-msgstr ""
+msgstr "matriz de salida debe ser contiguo"
 
 #: py/objint_mpz.c
 msgid "overflow converting long int to machine word"
@@ -4007,7 +4010,7 @@ msgstr "rgb_pins[%d] no está en el mismo puerto que el reloj"
 
 #: extmod/ulab/code/numpy/numerical.c
 msgid "roll argument must be an ndarray"
-msgstr "Argumento enrolado tiene que ser un ndarray"
+msgstr "argumento enrolado tiene que ser un ndarray"
 
 #: py/objstr.c
 msgid "rsplit(None,n)"
@@ -4032,7 +4035,7 @@ msgstr "sin capacidades para el conjunto"
 
 #: extmod/ulab/code/numpy/random/random.c
 msgid "shape must be None, and integer or a tuple of integers"
-msgstr ""
+msgstr "shape debe ser None, un entero o una tupla de enteros"
 
 #: extmod/ulab/code/ndarray.c
 msgid "shape must be integer or tuple of integers"
@@ -4056,7 +4059,7 @@ msgstr "el tamaño se define solo para ndarrays"
 
 #: extmod/ulab/code/numpy/random/random.c
 msgid "size must match out.shape when used together"
-msgstr ""
+msgstr "out.shape y el tamaño deben coincidir cuando se usan juntos"
 
 #: py/nativeglue.c
 msgid "slice unsupported"
@@ -4120,7 +4123,7 @@ msgstr "operación stream no soportada"
 
 #: py/objarray.c py/objstr.c
 msgid "string argument without an encoding"
-msgstr ""
+msgstr "argumento de cadena de texto sin codificación"
 
 #: py/objstrunicode.c
 msgid "string index out of range"
@@ -4145,7 +4148,7 @@ msgstr "error de sintaxis en JSON"
 
 #: extmod/modtime.c
 msgid "ticks interval overflow"
-msgstr ""
+msgstr "desbordamiento de intervalo de ticks"
 
 #: ports/nordic/common-hal/watchdog/WatchDogTimer.c
 msgid "timeout duration exceeded the maximum supported value"
@@ -4230,7 +4233,7 @@ msgstr "twai_start devolvió esp-idf error #%d"
 
 #: shared-bindings/busio/UART.c shared-bindings/canio/CAN.c
 msgid "tx and rx cannot both be None"
-msgstr "Ambos tx y rx no pueden ser None"
+msgstr "ambos tx y rx no pueden ser None"
 
 #: py/objtype.c
 msgid "type '%q' is not an acceptable base type"
@@ -4315,7 +4318,7 @@ msgstr "instrucción Xtensa '%s' con %d argumentos no soportada"
 
 #: shared-module/bitmapfilter/__init__.c
 msgid "unsupported bitmap depth"
-msgstr ""
+msgstr "profundidad de mapa de bits no compatible"
 
 #: shared-module/gifio/GifWriter.c
 msgid "unsupported colorspace for GifWriter"
