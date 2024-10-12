@@ -4,3 +4,5 @@ USB_PRODUCT = "Raspberry Pi Zero 2W"
 USB_MANUFACTURER = "Raspberry Pi"
 
 CHIP_VARIANT = "bcm2837"
+
+CIRCUITPY_TTS = 1

@@ -333,6 +333,9 @@ endif
 ifeq ($(CIRCUITPY_RANDOM),1)
 SRC_PATTERNS += random/%
 endif
+ifeq ($(CIRCUITPY_TTS),1)
+SRC_PATTERNS += tts/%
+endif
 ifeq ($(CIRCUITPY_RGBMATRIX),1)
 SRC_PATTERNS += rgbmatrix/%
 endif
@@ -694,6 +697,7 @@ SRC_SHARED_MODULE_ALL = \
 	qrio/QRDecoder.c \
 	rainbowio/__init__.c \
 	random/__init__.c \
+	tts/__init__.c \
 	rgbmatrix/RGBMatrix.c \
 	rgbmatrix/__init__.c \
 	rotaryio/IncrementalEncoder.c \
