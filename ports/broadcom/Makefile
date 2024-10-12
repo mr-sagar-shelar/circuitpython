@@ -31,6 +31,7 @@ INC += -I. \
 	   -Iperipherals/ \
        -I../../lib/tinyusb/src \
        -I../../supervisor/shared/usb \
+       -I../../shared-module/tts/includes \
 	   -I$(BUILD)
 
 
