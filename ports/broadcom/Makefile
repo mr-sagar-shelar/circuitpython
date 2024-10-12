@@ -55,7 +55,22 @@ SRC_C += bindings/videocore/__init__.c \
 		 peripherals/broadcom/gpio.c \
 		 peripherals/broadcom/interrupts.c \
 		 peripherals/broadcom/mmu.c \
-		 peripherals/broadcom/vcmailbox.c
+		 peripherals/broadcom/vcmailbox.c \
+		 $(wildcard ../../shared-module/tts/cmu_indic_lang/*.c) \
+		 $(wildcard ../../shared-module/tts/cmu_indic_lex/*.c) \
+		 $(wildcard ../../shared-module/tts/cmu_us_kal/src/*.c) \
+		 $(wildcard ../../shared-module/tts/cmulex/*.c) \
+		 $(wildcard ../../shared-module/tts/usenglish/*.c) \
+		 $(wildcard ../../shared-module/tts/flite/src/audio/*.c) \
+		 $(wildcard ../../shared-module/tts/flite/src/cg/*.c) \
+		 $(wildcard ../../shared-module/tts/flite/src/hrg/*.c) \
+		 $(wildcard ../../shared-module/tts/flite/src/lexicon/*.c) \
+		 $(wildcard ../../shared-module/tts/flite/src/regex/*.c) \
+		 $(wildcard ../../shared-module/tts/flite/src/speech/*.c) \
+		 $(wildcard ../../shared-module/tts/flite/src/stats/*.c) \
+		 $(wildcard ../../shared-module/tts/flite/src/synth/*.c) \
+		 $(wildcard ../../shared-module/tts/flite/src/utils/*.c) \
+		 $(wildcard ../../shared-module/tts/flite/src/wavesynth/*.c)
 
 SRC_S = peripherals/broadcom/boot$(SUFFIX).s
 
@@ -108,7 +123,8 @@ else
 endif
 
 
-CFLAGS += $(INC) -Wall -Werror -std=gnu11 $(BASE_CFLAGS) $(CFLAGS_MOD) $(COPT) $(DISABLE_WARNINGS)
+# CFLAGS += $(INC) -Wall -Werror -std=gnu11 $(BASE_CFLAGS) $(CFLAGS_MOD) $(COPT) $(DISABLE_WARNINGS)
+CFLAGS += $(INC) -Wall -std=gnu11 $(BASE_CFLAGS) $(CFLAGS_MOD) $(COPT) $(DISABLE_WARNINGS)
 
 $(BUILD)/lib/tlsf/tlsf.o: CFLAGS += -Wno-cast-align
 

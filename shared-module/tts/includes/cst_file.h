@@ -44,44 +44,15 @@
 #define CST_ERROR_FORMAT -1
 #define CST_OK_FORMAT     0
 
-#ifdef UNDER_CE
-/* File access stuff (WinCE 2.11 is really damaged) */
-#include <windows.h>
-#include <winbase.h>
-typedef HANDLE cst_file;
-#elif __palmos__
-#include <PalmOS.h>
-#include <System/StdIOPalm.h>
-typedef FILE * cst_file;
-#else
 #include <stdio.h>
 typedef FILE * cst_file;
-#endif
 
-/* File mapping stuff */
-#ifdef _WIN32
-#include <windows.h>
-typedef struct cst_filemap_struct {
-    void *mem;
-    cst_file fh;
-    size_t mapsize;
-    HANDLE h;
-} cst_filemap;
-#elif __palmos__
-typedef struct cst_filemap_struct {
-    void *mem;
-    cst_file fh;
-    unsigned int mapsize;
-    int fd;
-} cst_filemap;
-#else
 typedef struct cst_filemap_struct {
     void *mem;
     cst_file fh;
     size_t mapsize;
     int fd;
 } cst_filemap;
-#endif
 
 #define CST_OPEN_WRITE (1<<0)
 #define CST_OPEN_READ (1<<1)
@@ -98,35 +69,9 @@ long cst_fwrite(cst_file fh, const void *buf, long size, long count);
 long cst_fread(cst_file fh, void *buf, long size, long count);
 int cst_fprintf(cst_file fh, const char *fmt, ...);
 int cst_sprintf(char *s, const char *fmt, ...);
-#ifdef _WIN32
-#define snprintf c99_snprintf
 
-__inline int c99_vsnprintf(char* str, size_t size, const char* format,
-va_list ap)  {
-       int count = -1;
-       if (size != 0)
-           count = _vsnprintf_s(str, size, _TRUNCATE, format, ap);
-       if (count == -1)
-           count = _vscprintf(format, ap);
-       return count;
-   }
-__inline int c99_snprintf(char* str, size_t size, const char* format, ...)
-{
-       int count;
-       va_list ap;
-
-       va_start(ap, format);
-       count = c99_vsnprintf(str, size, format, ap);
-       va_end(ap);
-       return count;
-   }
-#endif
 #define cst_snprintf snprintf
 
-#if defined(__palmos__)
-#include <stdarg.h>
-int cst_vsprintf(char *s, const char *fmt, va_list args);
-#endif
 int cst_fclose(cst_file fh);
 int cst_fgetc(cst_file fh);
 
