@@ -248,3 +248,21 @@ Boards
    :target: https://choosealicense.com/licenses/mit/
 .. |Weblate| image:: https://hosted.weblate.org/widgets/circuitpython/-/svg-badge.svg
    :target: https://hosted.weblate.org/engage/circuitpython/?utm_source=widget
+
+
+Update memory space for broadcom
+~~~~~~
+
+-  Update ``ports/broadcom/peripherals/broadcom/link8d.ld`` file and add below code ''
+```
+MEMORY
+{
+    /* Kernel load address set in ports/broadcom/config.txt */
+    /* 
+    READONLY (rx): ORIGIN = 0x100000, LENGTH = 1536K
+    RAM (rw): ORIGIN = 0x200000, LENGTH = 1022M 
+     */
+    READONLY (rx): ORIGIN = 0x100000, LENGTH = 4608K
+    RAM (rw): ORIGIN = 0x500000, LENGTH = 1022M 
+}
+```
