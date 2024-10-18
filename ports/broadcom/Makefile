@@ -124,7 +124,7 @@ endif
 
 
 # CFLAGS += $(INC) -Wall -Werror -std=gnu11 $(BASE_CFLAGS) $(CFLAGS_MOD) $(COPT) $(DISABLE_WARNINGS)
-CFLAGS += $(INC) -Wall -std=gnu11 $(BASE_CFLAGS) $(CFLAGS_MOD) $(COPT) $(DISABLE_WARNINGS)
+CFLAGS += $(INC) -Wall --specs=nosys.specs -std=gnu11 $(BASE_CFLAGS) $(CFLAGS_MOD) $(COPT) $(DISABLE_WARNINGS)
 
 $(BUILD)/lib/tlsf/tlsf.o: CFLAGS += -Wno-cast-align
 
